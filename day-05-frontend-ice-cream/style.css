@@ -1,0 +1,256 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*===============================
+start my stuff
+===============================*/
+
+body {
+  background-color: rgba(234, 227, 130, 1.0);
+	color: rgba(23, 79, 160, 1.0);
+
+}
+
+h1 {
+  font-size: 4em;
+}
+
+h2 {
+  font-size: 3em;
+	text-align: center;
+}
+
+h3 {
+	font-size: 1.5em;
+}
+
+h4 {
+	font-size: 2em;
+}
+
+p {
+	margin: 15px;
+}
+.container {
+	margin: 20px;
+	width: 700px;
+}
+
+.top {
+	width: 700px;
+	border-bottom: solid 2px rgba(23, 79, 160, 1.0);
+}
+
+.title {
+	display: inline-block;
+	position: relative;
+	bottom: 40px;
+	left: 20px;
+	width: 500px;
+}
+
+.wiz-pic {
+	/*outline: solid 1px blue;*/
+  display: inline-block;
+}
+
+.history {
+	line-height: 1.2em;
+	padding: 10px;
+	text-align: center;
+}
+
+.flav-bord {
+	border: solid 5px rgba(23, 79, 160, 1.0);
+}
+
+.flav-bord .name {
+	color: black;
+}
+
+.flav-bord .cals {
+	color: black;
+}
+
+.flav-bord .sugar {
+	color: black;
+}
+
+.flav-head {
+	padding: 40px;
+	text-align: center;
+}
+
+
+.name1 {
+	display: inline-block;
+	text-align: center;
+	width: 200px;
+}
+
+.cals1 {
+	display: inline-block;
+	text-align: center;
+	width: 100px;
+}
+
+.sugar1 {
+	display: inline-block;
+	text-align: center;
+	width: 125px;
+}
+
+.pics1 {
+	display: inline-block;
+	text-align: center;
+	width: 200px;
+}
+
+.name {
+	display: inline-block;
+	position: relative;
+	bottom: 30px;
+	text-align: center;
+	width: 200px;
+}
+
+.cals {
+	display: inline-block;
+	position: relative;
+	bottom: 30px;
+	text-align: center;
+	width: 100px;
+}
+
+.sugar {
+	display: inline-block;
+	position: relative;
+	bottom: 30px;
+	text-align: center;
+	width: 125px;
+}
+
+.pics {
+	display: inline-block;
+	text-align: center;
+	width: 200px;
+}
+
+.line1 {
+	background-color: rgba(227, 94, 124, 1.0);
+}
+
+.line2 {
+	background-color: rgba(147, 107, 92, 1.0);
+}
+
+.line3 {
+	background-color: rgba(147, 107, 92, 1.0);
+}
+
+.line4 {
+	background-color: rgba(186, 151, 115, 1.0);
+}
+
+.line5 {
+	background-color: rgba(226, 218, 216, 1.0);
+}
+
+.line6 {
+	background-color: rgba(169, 197, 150, 1.0);
+}
+
+.line7 {
+	background-color: rgba(217, 174, 128, 1.0);
+}
+
+.line8 {
+	background-color: rgba(159, 144, 141, 1.0);
+}
+
+.line9 {
+	background-color: rgba(249, 184, 200, 1.0);
+}
+
+.line10 {
+	background-color: rgba(249, 184, 200, 1.0);
+}
+
+.line11 {
+	background-color: rgba(246, 246, 234, 1.0);
+}
+
+.line12 {
+	background-color: rgba(246, 246, 234, 1.0);
+}
+
+.bottom {
+	width: 700px;
+}
+
+.hours {
+	display: inline-block;
+	margin-top: 10px;
+	padding: 10px;
+	text-align: center;
+	width: 400px;
+}
+
+.contact {
+	border-left: solid 2px rgba(23, 79, 160, 1.0);
+	display: inline-block;
+	margin-top: 10px;
+	padding: 10px;
+	text-align: center;
+	width: 250px;
+}
+
+.ref {
+	padding: 20px;
+}
