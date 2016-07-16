@@ -52,8 +52,8 @@ start my stuff
 ===============================*/
 
 body {
-  background-color: rgba(234, 227, 130, 1.0);
-	color: rgba(23, 79, 160, 1.0);
+  background-color: rgba(147, 107, 92, 1.0);
+	color: white;
 
 }
 
@@ -84,7 +84,7 @@ p {
 
 .top {
 	width: 700px;
-	border-bottom: solid 2px rgba(23, 79, 160, 1.0);
+	border-bottom: solid 2px white;
 }
 
 .title {
@@ -96,7 +96,6 @@ p {
 }
 
 .wiz-pic {
-	/*outline: solid 1px blue;*/
   display: inline-block;
 }
 
@@ -107,7 +106,7 @@ p {
 }
 
 .flav-bord {
-	border: solid 5px rgba(23, 79, 160, 1.0);
+	border: solid 5px white;
 }
 
 .flav-bord .name {
@@ -243,7 +242,7 @@ p {
 }
 
 .contact {
-	border-left: solid 2px rgba(23, 79, 160, 1.0);
+	border-left: solid 2px white;
 	display: inline-block;
 	margin-top: 10px;
 	padding: 10px;
