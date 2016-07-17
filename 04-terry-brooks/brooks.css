@@ -67,29 +67,23 @@ h2 {
 	color: rgba(0, 118, 197, 1.0);
 	font-size: .85em;
 	font-weight: bold;
-	padding: 5px;
+	padding: 0 0 10px 5px;
 }
 
 h3 {
 	color: rgba(160, 159, 159, 1.0);
 	font-size: .85em;
 	font-weight: bold;
-	padding: 5px;
+	padding: 0 0 10px 5px;
 }
 
 h4 {
 	color: white;
 	font-size: .85em;
 	font-weight: bold;
-	padding: 5px;
+	padding: 0 0 10px 5px;
 }
 
-/*.outer {
-	background-color: black;
-	height: 400px;
-	width: 470px;
-
-}*/
 
 .container {
 	background-color: black;
@@ -119,23 +113,22 @@ h4 {
 	width:400px;
 }
 
-.all-box {
-	display: inline-block;
+.alnon-box {
+	float: left;
 	height: 50px;
 	outline: solid 1px white;
 	width:50px;
 }
 
-.all-pic {
+.alnon-pic {
 	height:45px;
 	position: absolute;
-	bottom: 6px;
-	right: 3px;
+	top: 2px;
+	left: 2px;
 	width: 45px;
 }
 
 .pic1 {
-	display: inline-block;
 	position: relative;
 }
 
@@ -145,53 +138,50 @@ h4 {
 }
 
 .shan-box {
-	display: inline-block;
+	float: left;
 	height: 50px;
 	outline: solid 1px white;
 	width:50px;
-}
-
-.pic2 {
-	display: inline-block;
-	position: relative;
-	bottom: 10px;
 }
 
 .shan-pic {
 		height:45px;
 		position: absolute;
-		bottom: 6px;
-		right: 3px;
+		top: 2px;
+		left: 2px;
 		width: 45px;
 }
 
+.pic2 {
+	position: relative;
+}
+
+
 .sect2-text {
 	display: inline-block;
-	width: 345px;
+	width: auto;
 }
 
 .terry-box {
-	display: inline-block;
+	float: left;
 	height: 50px;
 	outline: solid 1px white;
-	position: relative;
 	width:50px;
-}
-
-.pic3 {
-	display: inline-block;
-	position: relative;
 }
 
 .terry-pic {
 	height:45px;
 	position: absolute;
-	bottom: 6px;
-	right: 3px;
+	top: 2px;
+	left: 2px;
 	width: 45px;
+}
+
+.pic3 {
+	position: relative;
 }
 
 .sect3-text {
 	display: inline-block;
-	width: 345px;
+	width: 350px;
 }
