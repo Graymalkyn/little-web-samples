@@ -49,9 +49,16 @@ table {
 
 /*=====================================*/
 
+.bkgrnd {
+	background: url(Fantasy-bk.jpg);
+	height: 440px;
+	margin: 10px;
+	padding-top: 10px;
+	width: 500px;
+}
+
 body {
 	font-family: sans-serif;
-	margin: 20px;
 	text-transform: uppercase;
 	width: 400px;
 }
@@ -86,9 +93,9 @@ h4 {
 
 
 .container {
-	background-color: black;
+	background-color: rgba(0, 0, 0, .75);
 	height: 380px;
-	margin: 20px;
+	margin: 30px;
 	width: 450px;
 }
 
