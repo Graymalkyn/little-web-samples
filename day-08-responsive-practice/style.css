@@ -1,0 +1,265 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Content */
+
+.container {
+	font-family: Oswald, Helvetica, Verdana, sans-serif;
+	background-color: rgb(218, 218, 218);
+}
+
+h1 {
+	font-size: 4em;
+	font-weight: bold;
+}
+
+h2 {
+	font-size: 2em;
+	font-weight: bold;
+}
+
+.half h2, .whole h2 {	
+	text-transform: uppercase;
+}
+
+li {
+	text-transform: uppercase;
+}
+
+/* Nav */
+
+nav {
+	background-color: black;
+	color: white;
+	text-align: center;
+	padding: 20px 0;
+}
+
+nav div {
+	display: inline-block;
+}
+
+nav img {
+	max-width: 70px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.white {
+	background-color: white;
+	clear: both;
+	overflow: hidden;
+}
+
+.logo-left, .logo-right {
+	font-size: 1.5em;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.logo-left {
+	width: 300px;
+	text-align: right;
+}
+
+.logo-right{
+	width: 300px;
+	text-align: left;
+}
+
+nav a {
+	text-decoration: none;
+	color: white;
+	margin: 0 8%;
+}
+
+#hamburger {
+	display: none;
+}
+
+/* Header */
+header {
+	text-align: center;
+	color: black;
+	max-width: 750px;
+	margin: 0 auto;
+	line-height: 1.5;
+	padding: 6% 0;
+	clear: both;
+}
+
+header p {
+	font-size: 1.5em;
+}
+
+/* Half */
+
+.half {
+	float: left;
+	width: 48%;
+}
+
+.responsive, .development {
+	text-align: center;
+}
+
+.responsive img, .development img {
+	max-width: 88%;
+}
+
+.responsive p, .development p {
+	font-size: 1.2em;
+	line-height: 1.8;
+}
+
+.dumb {
+	padding: 6% 0%;
+}
+
+/* Whole */
+
+.whole {
+	clear: both;
+	line-height: 1.8;
+	font-size: 1.2em;
+	text-align: center;
+	max-width: 750px;
+	margin: 0 auto;
+}
+
+h3 {
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+/* Contact */
+
+.contact {
+	text-align: center;
+	padding: 8% 0;
+}
+
+.contact a {
+	text-decoration: none;
+	color: black;
+	text-transform: uppercase;
+	border: 3px solid black;
+	font-size: 1.8em;
+	padding: 2% 6%;
+	margin-right: 6%;
+}
+
+/* Footer */
+
+footer {
+	text-align: center;
+	background-color: black;
+	color: white;
+	padding: 4% 0;
+	line-height: 3;
+}
+
+footer img {
+	max-width: 32px;
+}
+
+footer li {
+	display: inline-block;
+	margin-right: 25px;
+	font-weight: bold;
+}
+
+@media (max-width: 750px)
+{
+	.half {
+		width: 100%;
+	}
+
+	.contact a {
+		font-size: 1.5em;
+	}
+
+	.contact-one {
+		margin: 4% 0 0 0;
+		display: block;
+		height: 75px;
+	}
+
+	.logo-left a, .logo-right a {
+		display: none;
+	}
+
+	#logo {
+		margin: 0 auto;
+		width: 70px;
+		padding: 0;
+		vertical-align: middle;
+	}
+
+	.logo-left, .logo-right {
+		display: none;
+	}
+
+	#hamburger {
+		display: inline-block;
+		width: 32px;
+		float: right;
+		margin-top: 4%;
+	}
+
+	nav {
+		padding-right: 4%;
+	}
+}
