@@ -137,11 +137,6 @@ body {
   width: 350px;
 }
 
-.buttons {
-	overflow: auto;
-	width: 620px;
-
-}
 
 button {
 	background-color: rgba(174, 92, 200, 1.0);
@@ -260,7 +255,6 @@ input {
 	}
 
 	.author-info {
-		overflow: auto;
 	  margin: 0 5px;
 	  width: 100%;
 	}
@@ -268,6 +262,7 @@ input {
 	.pj-pic {
 		float: left;
 	}
+
 
 	.jj-pic {
 		float: left;
@@ -289,9 +284,6 @@ input {
 	  color: rgba(156, 156, 156, 1.0);
 	}
 /*========================*/
-	.buttons {
-		max-width: 620px;
-	}
 
 	button {
 	  background-color: rgba(174, 92, 200, 1.0);
