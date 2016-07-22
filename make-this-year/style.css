@@ -113,7 +113,8 @@ body {
 
 .top-container {
   margin: 0 auto;
-  width: 650px;
+  max-width: 640px;
+	overflow: auto;
 }
 
 .top-text {
@@ -137,38 +138,37 @@ body {
 }
 
 .buttons {
-	outline: dashed 1px red;
-	float: left;
-	width: 650px;
+	overflow: auto;
+	width: 620px;
+
 }
 
-.invite-button {
-	outline: dashed 1px orange;
-  background-color: rgba(174, 92, 200, 1.0);
-  border-radius: 4px;
-  display: inline-block;
+button {
+	background-color: rgba(174, 92, 200, 1.0);
+	border-radius: 4px;
+	color: white;
 	float: left;
-  height: 40px;
-  margin: 20px 0 0 0;
-  padding: 15px 0 8px 20px;
-  width: 30%;
+	font-size: 1.5em;
+	margin: 10px 0 25px 0;
+	padding: 20px;
+	width: 30%;
 }
 
-.email-entry {
-	outline: dashed 1px blue;
-  background-color: white;
-  border-radius: 4px;
-  display: inline-block;
+input {
+	background-color: white;
+	border-radius: 4px;
+	font-size: 1.5em;
 	float: left;
-  height: 40px;
-  margin: 20px 15px 30px 0;
-  padding: 20px 0 0 20px;
-  width: 55%;
+	margin: 10px;
+	padding: 20px;
+	width: 55%;
 }
+
+/*================*/
 
 .body-container {
   margin: 0 auto;
-  width: 650px;
+  max-width: 640px;
 }
 
 .lower-title {
@@ -176,13 +176,14 @@ body {
 }
 
 .picture-group {
-	float: left;
+	overflow: auto;
 }
 
 .picture-group, .all-logos {
 	float: left;
   margin: 20px auto;
   width: 100%;
+
 }
 
 .author-info {
@@ -206,9 +207,30 @@ body {
 }
 
 
-.all-logos li {
+.all-logos {
+	overflow: auto;
+	width: 100%;
+}
+
+.all-logos img {
+	width: 100%;
+}
+
+.logo-fc {
 	float: left;
-	width: 33%;
+	width: 33%
+}
+
+.logo-tnw {
+	float: left;
+	width: 33%
+
+}
+
+.logo-qu {
+	float: left;
+	width: 33%
+
 }
 
 .join-text {
@@ -221,4 +243,75 @@ body {
 
 .crew-logo {
 	margin: 30px 0;
+}
+
+@media only screen and (max-width: 619px) {
+
+	 .top-container, .body-container {
+		 width: 88%;
+	 }
+
+
+/*=============================*/
+	.picture-group, .all-logos {
+	  margin: 20px auto;
+	  width: 100%;
+		overflow: auto;
+	}
+
+	.author-info {
+		overflow: auto;
+	  margin: 0 5px;
+	  width: 100%;
+	}
+
+	.pj-pic {
+		float: left;
+	}
+
+	.jj-pic {
+		float: left;
+
+	}
+
+	.dk-pic {
+		float: left;
+
+	}
+
+
+	.author-name {
+	  font-size: 1.2em;
+	  margin: 5px 0;
+	}
+
+	.author-text {
+	  color: rgba(156, 156, 156, 1.0);
+	}
+/*========================*/
+	.buttons {
+		max-width: 620px;
+	}
+
+	button {
+	  background-color: rgba(174, 92, 200, 1.0);
+		border-radius: 4px;
+		color: white;
+		display: block;
+		font-size: 1.5em;
+	  margin: 10px;
+	  padding: 20px;
+		width: 100%;
+	}
+
+	input {
+	  background-color: white;
+	  border-radius: 4px;
+		font-size: 1.5em;
+		display: block;
+	  margin: 10px;
+	  padding: 20px;
+		width: 100%;
+	}
+
 }
