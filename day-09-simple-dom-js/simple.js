@@ -2,8 +2,6 @@ var clickMeDiv = document.querySelector('.click-me');
 
 clickMeDiv.textContent = 'Click me now!';
 
-//clickMeDiv.classList.add("toggled");
-
 function toggleClass() {
 
   var containsClass = clickMeDiv.classList.contains('toggled');
