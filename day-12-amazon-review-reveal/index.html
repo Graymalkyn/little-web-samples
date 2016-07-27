@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <meta lang="en"/>
+    <head>
+      <title>Review Reveal</title>
+    </head>
+    <body>
+
+      <div class="container">
+
+        <h1>Dr. Who Ipsum</h1>
+
+          <p>I'm sorry. I'm so sorry. Please, when Torchwood comes to write my complete history, don't tell people I travelled through time and space with her mother! I don't want to go. Blimey, trying to make an Ood laugh... Goodbye...my Sarah Jane! I'm the Doctor, I can save the world with a kettle and some string! And look! I'm wearing a vegetable! What? What?! WHAT?! Allons-y! River, you know my name. You whispered my name in my ear! There's only one reason I would ever tell anyone my name. There's only one time I could...</p>
+          <div class="hidden-text">
+          <p>Yeah? Well I'm the Lord of Time. Don't you think she looks tired? It is! It's the city of New New York! Strictly speaking, it's the fifteenth New York since the original, so that makes it New-New-New-New-New-New-New-New-New-New-New-New-New-New-New New York. Sweet, maybe... Passionate, I suppose... But don't ever mistake that for nice. I don't want to go. You can spend the rest of your life with me, but I can't spend the rest of mine with you. I have to live on. Alone. That's the curse of the Time Lords.
+
+          <p>I'm the Doctor, I can save the world with a kettle and some string! And look! I'm wearing a vegetable! I'd call you a genius, except I'm in the room. Don't you think she looks tired? Please, when Torchwood comes to write my complete history, don't tell people I travelled through time and space with her mother! Yeah? Well I'm the Lord of Time. I don't want to go. Black tie...Whenever I wear this, something bad always happens. You need to get yourself a better dictionary. When you do, look up 'genocide'. You'll find a little picture of me there, and the caption'll read 'Over my dead body'.</p>
+        </div>
+
+      </div>
+
+      <button id="reveal-button">Read More...</button>
+
+
+        <style>
+
+          .container {
+            max-width: 700px;
+          }
+
+          .hidden-text {
+            height: 0px;
+            overflow: hidden;
+            transition: 2s;
+          }
+
+          h1 {
+            font-size: 2em;
+            font-weight: bold;
+            margin: auto;
+          }
+
+          .appear {
+            height: 300px;
+            /*transition: height 2s;*/
+          }
+
+          p {
+            padding: 10px;
+          }
+
+        </style>
+      <script src="reveal.js"></script>
+    </body>
+
+</html>
