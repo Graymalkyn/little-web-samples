@@ -6,6 +6,6 @@ function addItem(){
   var listItem = document.createElement('li');
   listItem.textContent = theField.value;
   theList.appendChild(listItem);
+  theField.value = '';
 }
-
 theButton.addEventListener('click', addItem);
