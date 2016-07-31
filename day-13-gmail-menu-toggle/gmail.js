@@ -1,8 +1,8 @@
 var theList = document.querySelector('#the-list');
 
 theList.addEventListener('click', function(evt) {
-    if (evt.target.tagName !==v"LI"); {
-      
+    if (evt.target.tagName !== "LI"); {
+
     }
 
 
