@@ -1,12 +1,10 @@
 var theList = document.querySelector('#the-list');
 
 theList.addEventListener('click', function(evt) {
-    if (evt.target.tagName !== "LI"); {
-
-    }
-
-
-
+    // if (evt.target.tagName !== "LI"); {
+    //
+    // }
+    
     var currentlySelectedLI = document.querySelector('.selected');
     console.log('currentlySelectedLI', currentlySelectedLI);
     if (currentlySelectedLI !== null) {
