@@ -13,18 +13,12 @@ function saveText() {
   paragraph.textContent = textArea.value;
   paragraph.classList.toggle('hide');
   div.classList.toggle('show');
-
 }
-
 
 function cancelText() {
-  // var textArea = document.querySelector('.text-edit');
-  // paragraph.textContent = textArea.value;
   paragraph.classList.toggle('hide');
   div.classList.toggle('show');
-
 }
-
 
 cancelButton.addEventListener('click', cancelText);
 saveButton.addEventListener('click', saveText);
