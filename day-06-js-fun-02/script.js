@@ -15,7 +15,7 @@ createListItem();
 
 
 
-//Below: original (working) script
+//Below: original Javascript
 
 
 // function createListItem(food) {
