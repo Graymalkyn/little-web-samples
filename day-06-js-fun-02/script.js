@@ -1,24 +1,30 @@
-console.log('hooked up');
-var theList = document.querySelector('#the-list');
-console.log(theList);
-
-function createListItem(food) {
-  console.log('called createListItem');
-
-
-var newListItem = document.createElement('li');
-newListItem.textContent = food;
-theList.appendChild(newListItem);
-}
-
-// createListItem('taco');
-// createListItem('queso');
-// createListItem('chips');
-
-
+//if I replace 'document.querySelector' with '$', I get an error saying '$' is not defined.
+var theList = $('#the-list');
 var food = ['steak', 'shrimp', 'wings', 'chips', 'queso', 'fajitas'];
 
-for (var i = 0; i < food.length; i++) {
-  console.log(i, food[i]);
-  createListItem(food[i])
+
+function createListItem(){                   //creates function name - next three lines define what function does
+  for (var i = 0; i < food.length; i++){     //counter
+    var html = ('<li>' + food[i] + '</li>'); //var data = (builds list item with current counter result)
+    theList.append(html);                    // target.action(data)
+  }
+
 }
+
+createListItem();
+
+
+
+//Below: original (working) script
+
+
+// function createListItem(food) {
+//
+//   var newListItem = document.createElement('li');
+//   newListItem.textContent = food;
+//   theList.appendChild(newListItem);
+//   }
+//
+// for (var i = 0; i < food.length; i++) {
+// createListItem(food[i])
+// }
