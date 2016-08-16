@@ -1,8 +1,18 @@
-var changeText = document.querySelector('.the-paragraph');
+var changeText = document.querySelector('.paragraph');
 
 function toggleClass() {
   var containsClass = changeText.classList.contains('toggled');
-  changeText.textContent = 'Dont be a weenie...click harder than that!!!';
+  changeText.textContent = 'Clicked!!!';
 }
 
 changeText.addEventListener('click', toggleClass);
+
+
+
+// var changeText = $('.the-paragraph');
+//
+// function toggleClass() {
+//   changeText.text("clicked via jQuery")
+// }
+//
+// changeText.on('click', toggleClass);
