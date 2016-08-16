@@ -1,6 +1,6 @@
 var myHouse = {
   bedroomCount: 3,
-  bathroonCount: 2,
+  bathroomCount: 2,
   stories: 1,
   squareFootage: 2100
 };
@@ -12,7 +12,7 @@ var starterText = numberOfBedroomsDiv.textContent;
 numberOfBedroomsDiv.textContent = starterText + myHouse.bedroomCount;
 
 var numberOfBathroomsSpan = document.querySelector('#number-of-bathrooms');
-numberOfBathroomsSpan.textContent = myHouse.bathroonCount;
+numberOfBathroomsSpan.textContent = myHouse.bathroomCount;
 
 var numberOfStoriesSpan = document.querySelector('#stories');
 numberOfStoriesSpan.textContent = myHouse.stories;
