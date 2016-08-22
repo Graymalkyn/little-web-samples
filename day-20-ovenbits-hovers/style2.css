@@ -50,7 +50,7 @@ table {
 /*====================================*/
 
 p {
-	font-size: 1.4em;
+	font-size: 1.2em;
 	line-height: 1.5em;
 	margin: 20px;
 }
@@ -58,13 +58,14 @@ p {
 .container {
 	color: white;
 	overflow: auto;
-	font-family: Avenir Next Condensed, sans-serif;
+	font-family: Calibri, Avenir Next Condensed, sans-serif;
+	width: 960px;
 }
 
 .frame1 {
 	background-position: center;
 	width: 30%;
-	height: 400px;
+	height: 300px;
 	margin: 5px;
 	float: left;
 	position: relative;
@@ -74,7 +75,7 @@ p {
 .frame2 {
 	background-position: center;
 	width: 30%;
-	height: 400px;
+	height: 300px;
 	margin: 5px;
 	float: left;
 	position: relative;
@@ -84,7 +85,7 @@ p {
 .frame3 {
 	background-position: center;
 	width: 30%;
-	height: 400px;
+	height: 300px;
 	margin: 5px;
 	float: left;
 	position: relative;
@@ -98,19 +99,21 @@ p {
 	right: 0px;
 	bottom: 0px;
 	left: 0px;
+	clear: left;
 }
 
 .tint:hover {
 	background-color: rgba(0, 0, 0, 0.4);
 }
 
-.tint:hover button {
-	display: inline-block;
-	opacity: 1;
+.tint:hover .text-group {
+	bottom: 60px;
+	transition: 1s;
 }
 
+
 .main-text {
-	font-size: 3.5em;
+	font-size: 2.5em;
 }
 
 button {
@@ -118,11 +121,9 @@ button {
 	padding: 5px 10px;
 	border: solid 1px white;
 	color: white;
-	font-size: 1.5em;
-	transition: 1s;
-	/*transition-property: bottom;*/
+	font-size: 1.2em;
 	background: transparent;
-	bottom: 30px;
+	transition: 1s;
 }
 
 button:hover {
@@ -130,10 +131,15 @@ button:hover {
 	color: black;
 }
 
-/*not recognized*/
+.tint:hover button {
+	display: inline-block;
+	opacity: 1;
+
+}
+
+
 .text-group {
-	outline: 1px dashed green;
 	position: absolute;
-	/*vertical-align: bottom;*/
 	bottom: 30px;
+
 }
