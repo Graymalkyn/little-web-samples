@@ -48,17 +48,17 @@ table {
 }
 
 /*====================================*/
+
 p {
 	font-size: 1.4em;
-	margin: 20px;
 	line-height: 1.5em;
-
+	margin: 20px;
 }
 
 .container {
 	color: white;
 	overflow: auto;
-	font-family: sans-serif;
+	font-family: Avenir Next Condensed, sans-serif;
 }
 
 .frame1 {
@@ -71,8 +71,6 @@ p {
 	text-align: center;
  }
 
-
-
 .frame2 {
 	background-position: center;
 	width: 30%;
@@ -81,9 +79,7 @@ p {
 	float: left;
 	position: relative;
 	text-align: center;
-
 }
-
 
 .frame3 {
 	background-position: center;
@@ -94,7 +90,6 @@ p {
 	position: relative;
 	text-align: center;
 }
-
 
 .tint {
 	background-color: rgba(0, 0, 0, 0.2);
@@ -110,65 +105,35 @@ p {
 }
 
 .tint:hover button {
-	/*background: transparent;  if I add anything here, then background on line 134 does not work*/
 	display: inline-block;
-	z-index: 0;
+	opacity: 1;
 }
 
 .main-text {
 	font-size: 3.5em;
-
 }
 
 button {
-	display: none;
+	opacity: 0;
 	padding: 5px 10px;
 	border: solid 1px white;
 	color: white;
 	font-size: 1.5em;
-	/*-webkit-transition: height 1s;
-		transition-duration: 1s;*/
+	transition: 1s;
+	/*transition-property: bottom;*/
+	background: transparent;
+	bottom: 30px;
 }
 
 button:hover {
 	background-color: white;
 	color: black;
 }
+
 /*not recognized*/
 .text-group {
-	display: inline-block;
-	outline: dashed 1px red;
-	vertical-align: middle;
-	position: relative;
-	vertical-align: middle;
-}
-/*not recognized*/
-.text-group:hover {
-	outline: dashed 1px yellow;
-	margin: 100px 0 10px 0;
-
-}
-
-/*not recognized*/
-@media only screen and (max-width: 768px;){
-	.container {
-		width: 95%;
-		}
-
-		.frame1 {
-			max-width: 100%;
-			float: left;
-
-		}
-		.frame2 {
-			max-width: 100%;
-			float: left;
-
-		}
-		.frame3 {
-			max-width: 100%;
-			float: left;
-
-		}
-
+	outline: 1px dashed green;
+	position: absolute;
+	/*vertical-align: bottom;*/
+	bottom: 30px;
 }
