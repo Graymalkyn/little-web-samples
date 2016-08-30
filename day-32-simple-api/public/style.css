@@ -1,0 +1,12 @@
+#counter-stuff {
+  border: 1px black solid;
+  max-width: 960px;
+}
+
+button {
+  font-size: 1.2em;
+  padding: 5px;
+  background-color: rgba(199, 199, 199, 1.0);
+  border-radius: 5px;
+  margin: 5px;
+}
