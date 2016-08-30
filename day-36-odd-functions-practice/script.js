@@ -40,13 +40,11 @@ function isVowel(char){
 // ---------------------
 
 
-//I get where it's selecting which letters NOT to use, but where is is selecting which letters TO use?
 function rovarspraket(phrase){
     var newPhrase = '';
     for (var i=0; i<phrase.length; i++) {
       if (phrase[i] !== 'a' && phrase[i] !== 'e' && phrase[i] !== 'i' && phrase[i] !== 'o' && phrase[i] !== 'u' && phrase[i] !== 'y'){
         var rovarspraketPhrase = newPhrase += phrase[i] + 'o' + phrase[i];
-        console.log(rovarspraketPhrase, phrase[i]);
         }
         else {
           rovarspraketPhrase = newPhrase += phrase[i];
@@ -82,7 +80,10 @@ function multiply(integers){
 // ---------------------
 
 function reverse(string){
-    return string.split("").reverse().join("");
+  var backerds = '';
+  for (var i=string.length-1; i>=0; i--) backerds += string[i];
+  return backerds;
+    // return string.split("").reverse().join("");
 }
 
 // ---------------------
@@ -119,9 +120,19 @@ function filterLongWords(words, i){
 // ---------------------
 
 function charFreq(string){
-  var letter = {};
+  var freq = {};
   for (var i=0; i<string.length; i++){
-    letter[string[i]] = ++letter[string[i]]||1;
+    var letter = string[i];
+    if (freq[letter] === undefined){
+      freq[letter] = 1;
+    }
+    else {
+      freq[letter] = freq[letter] + 1;
+    }
   }
-  return letter;
+  // var letter = {};
+  // for (var i=0; i<string.length; i++){
+  //   letter[string[i]] = ++letter[string[i]]||1;
+  // }
+  return freq;
 }
