@@ -1042,10 +1042,8 @@ var averagePrice = averagePriceOfAllItems();
 
 //Show me how to get an array of items that cost between $14.00 and $18.00 USD.
 
-function affordableItems(){
+function affordableItems(lowPrice, highPrice){
   var medianPrice = [];
-  var lowPrice = 14.00;
-  var highPrice = 18.00;
   for (var item of items){
     if (item.price >= lowPrice && item.price <= highPrice){
       medianPrice.push(item);
@@ -1054,75 +1052,76 @@ function affordableItems(){
   return medianPrice;
 }
 
-var medianPrice = affordableItems();
+var medianPrice = affordableItems(14.00, 18.00);
 // console.log("Items that cost between $14.00 USD and $18.00 USD:", medianPrice);
 
 //Show me how find the item with a "GBP" currency code and print its name and price. Please console.log the one you find.
-function britishItem(){
+function britishItem(currency){
   var title;
   for (var item of items){
-    if (item.currency_code === "GBP"){
+    if (item.currency_code === currency){
       title = item.title;
     }
   }
   return title;
 }
-var title = britishItem();
+var title = britishItem('GBP');
 
-function britishPrice(){
+function britishPrice(currency){
   var quid;
   for (var item of items){
-    if (item.currency_code === "GBP"){
+    if (item.currency_code === currency){
       quid = item.price;
     }
   }
   return quid;
 }
 
-var quid = britishPrice();
+var quid = britishPrice('GBP');
 // console.log('Item with "GBP" currency code:', title, 'costs £',quid);
 
 //Show me how to find which items are made of wood. Please console.log the ones you find.
 
-// function madeOfWood(){
-//   var filteredItems = [];
-//   for (var item of items){
-//     if (item.materials contains 'wood')
-//   }
-//   return filteredItems;
-// }
-//
-// var filteredItems = madeOfWood();
-// console.log('Items made with wood:', filteredItems);
+function chooseMaterial(material){
+  var whatMaterial = [];
+  for (var item of items){
+    if (item.materials.indexOf(material) > -1){
+      whatMaterial.push(item.title);
+    }
+  }
+  return whatMaterial;
+}
+
+var whatMaterial = chooseMaterial('wood');
+// console.log('Items made with wood:', whatMaterial);
 
 
 //Show me how to find which items are made of eight or more materials. Please console.log the ones you find.
 
-function mulitpleMaterials(){
-  var eightOrMore = [];
+function mulitpleMaterials(num){
+  var numberOfItems = [];
   for (var item of items){
-    if (item.materials.length >= 8){
-      eightOrMore.push(item);
+    if (item.materials.length >= num){
+      numberOfItems.push(item.title);
     }
   }
-  return eightOrMore;
+  return numberOfItems;
 }
 
-var eightOrMore = mulitpleMaterials();
-// console.log('Items made of eight or more materials:', eightOrMore);
-
+var numberOfItems = mulitpleMaterials(8);
+// console.log('Items with 8 or more materials:', numberOfItems)
 
 //Show me how to calculate how many items were made by their sellers
 
-function madeBySeller(){
-  var filteredItems = [];
+function madeBySeller(whoMade){
+  var homeMadeItems = [];
   for (var item of items){
-    if (item.who_made === 'i_did'){
-      filteredItems.push(item);
+    if (item.who_made === whoMade){
+      homeMadeItems.push(item);
     }
   }
-  return filteredItems.length;
+  return homeMadeItems.length;
 }
 
-var filteredItems = madeBySeller();
-// console.log(filteredItems,' items were made by their sellers')
+var homeMadeItems = madeBySeller('i_did');
+// console.log(homeMadeItems,'items were made by their sellers')
